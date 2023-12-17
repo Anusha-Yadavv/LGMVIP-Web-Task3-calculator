@@ -2,39 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <div class="container">
-        <form action="" name="" class="calculator">
-            <input type="text" class="value" readonly name="txt" />
-            <span class="num clear"><i>CLEAR</i></span>
-            <span class="num"><i>/</i></span>
-            <span class="num"><i>*</i></span>
-            <span class="num"><i>7</i></span>
-            <span class="num"><i>8</i></span>
-            <span class="num"><i>9</i></span>
-            <span class="num"><i>-</i></span>
-            <span class="num"><i>4</i></span>
-            <span class="num"><i>5</i></span>
-            <span class="num"><i>6</i></span>
-            <span class="num plus"><i>+</i></span>
-            <span class="num"><i>1</i></span>
-            <span class="num"><i>2</i></span>
-            <span class="num"><i>3</i></span>
-            <span class="num"><i>0</i></span>
-            <span class="num"><i>00</i></span>
-            <span class="num"><i>.</i></span>
 
-            <span class="num equal"><i>=</i></span>
-        </form>
+  <div class="container">
+    <div class="calculator">
+      <h2 type="text" class="value" id="output_container"></h2>
+      <span class="num clear" onclick="clearOutput()"><i>Clear</i></span>
+      <span class="num" onclick="appendSymbol('/')"><i>/</i></span>
+      <span class="num" onclick="appendSymbol('*')"><i>*</i></span>
+      <span class="num" onclick="appendNumber('7')"><i>7</i></span>
+      <span class="num" onclick="appendNumber('8')"><i>8</i></span>
+      <span class="num" onclick="appendNumber('9')"><i>9</i></span>
+      <span class="num" onclick="appendSymbol('-')"><i>-</i></span>
+      <span class="num" onclick="appendNumber('4')"><i>4</i></span>
+      <span class="num" onclick="appendNumber('5')"><i>5</i></span>
+      <span class="num" onclick="appendNumber('6')"><i>6</i></span>
+      <span class="num plus" onclick="appendSymbol('+')"><i>+</i></span>
+      <span class="num" onclick="appendNumber('1')"><i>1</i></span>
+      <span class="num" onclick="appendNumber('2')"><i>2</i></span>
+      <span class="num" onclick="appendNumber('3')"><i>3</i></span>
+      <span class="num" onclick="appendNumber('0')"><i>0</i></span>
+      <span class="num" onclick="appendNumber('00')"><i>00</i></span>
+      <span class="num" onclick="appendDecimal()"><i>.</i></span>
+      <span class="num equal" onclick="calculate()"><i>=</i></span>
     </div>
-
+  </div>
+  <script src="./script.js"></script>
 </body>
+
+
+
 
 </html>
