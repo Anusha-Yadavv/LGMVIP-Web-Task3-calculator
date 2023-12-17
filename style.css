@@ -11,6 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #14171e;
+
 }
 
 .container {
@@ -120,4 +121,19 @@ body {
   border-left: 1px solid #fff4;
   border-bottom: 1px solid #fff4;
   border-top: 1px solid #fff4;
+}
+
+@media screen and (max-width:768px) {
+  .container {
+
+    position: absolute;
+
+  }
+
+  .container span {
+    width: 66px;
+    height: 75px;
+  }
+
+
 }
