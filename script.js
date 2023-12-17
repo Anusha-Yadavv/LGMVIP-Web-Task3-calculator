@@ -37,7 +37,9 @@ function calculate() {
 
     updateOutput();
   } catch (error) {
-    currentInput = alert("Offoo!! Please enter valid input");
+    // currentInput = alert("Offoo!! Please enter valid input");
+    currentInput = "Error! Invalid Input";
+
     console.log("current input", currentInput);
 
     updateOutput();
