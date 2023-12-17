@@ -16,7 +16,8 @@ body {
 
 .container {
   position: relative;
-  min-width: 300px;
+  background-color: #14171e;
+
   min-height: 400px;
   padding: 40px 30px 30px;
   border-radius: 20px;
@@ -126,13 +127,36 @@ body {
 @media screen and (max-width:768px) {
   .container {
 
+    width: 350px;
     position: absolute;
+
 
   }
 
   .container span {
-    width: 66px;
-    height: 75px;
+
+    width: 65px;
+    height: 73px;
+    margin-left: 0;
+    margin-right: 0;
+
+
+  }
+
+  .calculator .clear {
+    grid-column: span 2;
+    width: 140px;
+  }
+
+  .calculator .value {
+    width: calc(100% - 10px);
+    left: 0;
+
+  }
+
+  body {
+    align-items: flex-start;
+    margin: 40px;
   }
 
 
