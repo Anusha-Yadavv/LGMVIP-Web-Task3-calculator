@@ -94,6 +94,7 @@ body {
   padding: 10px;
   font-size: 2em;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .calculator .clear {
@@ -150,8 +151,10 @@ body {
     width: 140px;
   }
 
-  .calculator .value {
-    width: calc(100% - 10px);
+  .value {
+    /* width: calc(100% - 10px); */
+    width: 300px;
+
     left: 0;
 
   }
