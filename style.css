@@ -78,11 +78,11 @@ body {
 
 }
 
-.calculator .value {
+.value {
   position: relative;
   grid-column: span 4;
   height: 100px;
-  width: calc(100% - 20px);
+  width: 370px;
   left: 10px;
   border: none;
   outline: none;
@@ -93,6 +93,7 @@ body {
   text-align: right;
   padding: 10px;
   font-size: 2em;
+  overflow: hidden;
 }
 
 .calculator .clear {
@@ -129,6 +130,7 @@ body {
 
     width: 350px;
     position: absolute;
+    margin: 10px;
 
 
   }
